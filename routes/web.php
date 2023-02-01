@@ -15,3 +15,5 @@ use App\Http\Controllers\Controllers\MainController as MainController;
 */
 
 Route::get('/', [MainController::class, 'index']);
+
+Route::get('/addTrain', [MainController::class, 'addTrain']);

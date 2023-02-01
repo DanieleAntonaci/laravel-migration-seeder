@@ -17,9 +17,11 @@ return new class extends Migration
             $table->id();
 
             $table->string('place_of_departure', 64);
-            $table->dateTime('departure_time');
+            $table->date('departure_date');
+            $table->time('departure_time');
             $table->string('place_of_arrival');
-            $table->dateTime('arrival_time');
+            $table->dateTime('arrival_date');
+            $table->time('arrival_time');
             $table->integer('price')->unsigned();
             $table->string('train_code', 32);
             $table->string('owner_company', 64);
