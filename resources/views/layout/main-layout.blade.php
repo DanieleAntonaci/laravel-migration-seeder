@@ -5,5 +5,7 @@
     </head>
     <body >
        @yield('list-train')
+
+       @yield('list-travel')
     </body>
 </html>

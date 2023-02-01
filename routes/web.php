@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controllers\MainController as MainController;
+use App\Http\Controllers\Controllers\TravelController as TravelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +16,7 @@ use App\Http\Controllers\Controllers\MainController as MainController;
 */
 
 Route::get('/', [MainController::class, 'index']);
+Route::get('/Travels', [TravelController::class, 'index']);
 
 Route::get('/addTrain', [MainController::class, 'addTrain']);
+Route::get('/addTravel', [TravelController::class, 'addTravel']);
